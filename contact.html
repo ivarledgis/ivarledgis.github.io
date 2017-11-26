@@ -1,64 +1,122 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>
-		Welcome 
-	</title>
+<title>HotelDivine</title>
+<link href="css/style.css" rel="stylesheet">
+<script>
+function check_feedback()
+{
+	if (document.getElementById("name").value=="")
+	{
+		alert("please enter your name");
+		document.getElementById("name").focus();
+		return false;
+	}
+	else if (document.getElementById("phoneno").value=="")
+	{
+		alert("please enter your phone number");
+		document.getElementById("phoneno").focus();
+		return false;
+	}
+	else if (document.getElementById("email").value=="")
+	{
+		alert("please enter your Email Id");
+		document.getElementById("email").focus();
+		return false;
+	}
+	else if (document.getElementById("message").value=="")
+	{
+		alert("please enter your Message");
+		document.getElementById("message").focus();
+		return false;
+	}
 
-	<link rel="stylesheet" type="text/css" href="index.css">
+}
+</script>
 </head>
 <body>
-		<div id="header">
-			<h1><a href="F:\WT\my project\index.html">Alisha Maharjan</a></h1>
-		</div>
+<div id="upcontain">
+<div id="logo">
+	<a href="header.html"><img src="image/logo.jpg"  height="100px"></a>
+</div>
+<div id="moto1">
+<img src="image/moto.gif" height="100px">
+</div>
+<div id="info">
+	<a href="info.html">info@hoteldivine.com.np</a>
+	<a href="Booknow.html" target="_blank" class="book">Book now!</a>
+	<div id="tag">
+<br><a href="https://www.facebook.com/pages/Hotel-Divine/789558371123071" target="_blank"><img src="image/fb.png"></a>
+<a href="https://www.gmail.com" target="_blank"><img src="image/gmail.png"></a>
+<a href="https://www.twitter.com" target="_blank"><img src="image/tw.png"></a></div>
+</div>
+</div>
+<div class="clearfix" id="header" >
+	<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="dining.html" >Dining</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+<li><a href="gallery.html" >Gallery</a></li>
+</ul>
+</div>
+<div id="joinus" class="minheight">
 
-		<div id="mainpic">
-			<!--<center><a href="F:\WT\my project\about.html"><img src="Images/alisa.jpg" alt="alisa" style="width:150px;height:150px;">
-			</a></center>-->
-		</div>
+<form action="hoteldivine@gmail.com" method="post" name="feedback" id="feedback" onsubmit="return check_feedback();">
+			<h2 style="font-size: "50";margin: "auto";">Feedback</h2>
+			<table  border="0" cellpadding="5" cellspacing="5">
+				<tbody style="font-size: 22;line-height: 1.7;">
+					<tr style="font-size: 22;">
+					<td>Name</td>
+					<td><input type="text" name="name" id="name"></td>
+				</tr>
+				<tr>
+					<td>Phone No</td>
+					<td><input type="text" name="Phoneno" id="phoneno" placeholder="123456789"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" name="email" id="email" placeholder="abc@email.com"></td>
+				</tr>
+				<tr><td>Message</td>
+				<td><textarea name="message" id="message" height="150"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit" id="submit">
+					</td><td><a href="www.facebook.com"><img src="image/fb.png"></a>
+				<a href="www.twitter.com"><img src="image/tw.png"></a></td>
+					</tr>
+				</table>
 
-		<div id="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="F:\6th sem">CSIT</a></li>
-				<li><a href="https://astepforwardsite.wordpress.com/">Blog</a></li>
-				<li><a href="">Resume</a></li>
-				<li><a href="Contact.html">Contact</a></li>
-			</ul>
-		</div>
+</div>
 
+	<div id="footer" class="clearfix">
+<div>
+	<div id="information">
+INFORMATION:</P>
+We are trying to provide the best home away from home.You will have a homely environment here.. We will try our best to provide 
+you the luxirious day here.
+</div>
 
-		<div id="content">
-			<h3>Contact us</h3>
-			<p>
-			       P.O. Box. No. 11359<br /><br />
+	<div id="Contact-us">
+<p class="footertitle">CONTACT US:</P>
+Pokhara,Nepal </br>
+Tel no:065-xxxxxxx</br>
+Email:HotelDivine@info.com</br>
+</div>
 
-                   Address:Gwarko,Lalitpur, Nepal<br /><br />
+	<div id="Find-us-on">
+<p class="footertitle">FIND US ON:</p>
+<div id="lowertag">
+	<br><a href="https://www.facebook.com/pages/Hotel-Divine/789558371123071" target="_blank"><img src="image/fb.png"></a>
+	<a href="https://www.gmail.com" target="_blank"><img src="image/gmail.png"></a>
+	<a href="https://www.twitter.com" target="_blank"><img src="image/tw.png"></a>
+</div>
 
-                   Tel : +9779813763172<br /><br />
-
-                   Fax : 12398237<br /><br />
-            
-                  Email : <span id="email">rozalisa147@gmail.com</span>
-              </p>
-		</div>
-		
-		<div id="sidebar">
-			<h3>Follow me on</h3>
-    			<ul>
-    				<li><a href="https://www.facebook.com/unspoken147/"><img src="icons/facebook.ico" style="height: 30px;width: 30px;margin-right: 2%"  />
-    					Facebook</a></li>
-    				<li><a href="https://plus.google.com/u/0/106891102778253585789"><img src="icons/gmail.ico" style="height: 30px;width: 30px;margin-right: 2%">Gmail</a>
-    				<li><a href="#"><img src="icons/twitter_2.ico" style="height: 30px;width: 30px;margin-right: 2%" />Twitter</a></li>
-    				<li><a href="#"><img src="icons/flickr.ico" style="height: 30px;width: 30px;margin-right: 2%"/>Flickr</a></li>
-
-                </ul>
-		</div>
-
-
-		<div id="footer">
-			  Copyright &copy; 2017 Alisha Maharjan
-		</div>
+</div>
+</div>
+</div>
+<div class="clearfix copyright">&copy;HotelDivine, All Right Reserved</div>
+</div>
 </body>
 </html>

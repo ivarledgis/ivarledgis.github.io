@@ -1,0 +1,57 @@
+<html>
+<head>
+<title> Form sample</title>
+</head>
+<body>
+
+<form method ="post" onsubmit="return check_login();">
+<h3> LOGIN </h3>
+<label>Username:</label><br>
+<input type = "text" name = "username" id = "username" size = "30" placeholder = "username" >
+<br>
+  <label>password: </label><br>
+<input type = "password"  name = "password" id = "password" size = "30" placeholder= "password">
+<br>
+<label> Remember </label>
+<input type="checkbox" name = "rememeber" value ="1">
+<input type = "submit" value = "login" name = "logibtn" id="loginbtn" >
+</form>
+
+<script language="javascript">
+function check_login()
+{
+
+
+	if(document.getElementById("username").value=="")
+{
+	alert("please enter username");
+	document.getElementById("username").focus();
+return false;
+}
+
+	if(document.getElementById("password").value=="")
+{
+	alert("please enter password");
+	document.getElementById("password").focus();
+	return false;
+}
+else if	(document.getElementById("password").value.length<="3")
+{
+ alert("please enter password length greather than equal to 6");
+ document.getElementById("password").focus();
+}
+else if((document.getElementById("username").value!="academia") || 
+ (document.getElementById("password").value!="academia"))
+{
+alert("Username or Password is incorrect");
+return false;
+}
+
+if((document.getElementById("username").value=="academia") &&  
+ (document.getElementById("password").value=="academia"))
+{
+window.location.href="second.html";
+return false;
+}
+}
+</script>
