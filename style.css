@@ -1,0 +1,187 @@
+body , html{
+height: 100%;
+margin: 0;
+font-size: 16px;
+font-family: "Lato", sans-serif;
+font-weight: 400;
+line-height: 1.8em;
+
+
+}
+
+#home , #about, #resume, #contact{
+
+	position: relative;
+	opacity: 0.80;
+	background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+
+}
+
+#home{
+
+	background-image: url('./image/homepage.jpg');
+	min-height: 100%;
+}
+#about{
+
+	background-image: url('./image/dots.jpg');
+	min-height: 90%;
+}
+#resume{
+
+	background-image: url('./image/img3.jpg');
+	min-height: 90%;
+}
+#contact{
+	background-image: url('./image/cont_1.jpg');
+	min-height: 90%;
+
+}
+.section{
+	padding: 10px;
+}
+.section-light{
+	background-color:#f4f4f4;
+	color: #666;
+
+}
+.section-dark{
+	background-color:#282e34;
+	color: #ddd;
+
+}
+.header1{
+	margin-right: 30px; 
+	font-size: 20px;
+}
+
+.nav_bar1{
+
+	position: absolute;
+	top: 1% ; 
+	width: 100%;
+	text-align: right;
+	color: #000;
+	font-size: 27px;
+	text-transform: uppercase;
+}
+.nav_bar{
+
+	position: absolute;
+	top: 50% ; 
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.nav_bar .border{
+	background-color: #111;
+	color: white;
+	padding: 20px;
+
+}
+.nav_bar .border.trans{
+	background-color: transparent;
+}
+ul{
+
+	list-style: none;
+}
+li{
+
+	display: inline;
+	padding: 0px 10px;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+a:hover{
+	text-decoration: underline;
+	text-decoration-color: green;
+	
+}
+td{
+	color: #000;
+}
+.active{
+	text-decoration: underline;
+	text-decoration-color: green;
+}
+
+@media(max-width: 568px){
+
+	#home, #about, #resume, #contact{
+		background-attachment: scroll;
+	}
+}
+
+
+
+
+
+#about #border_1st
+{
+	padding-top: 1%;
+	width: 45%;
+	background-color: white;
+	border-style: solid;
+	border-width:20px;
+	border-color: black;
+	margin-left: 20%;
+	
+}
+
+#about #border_2nd
+{
+
+	background-color: green;
+	height: 100%;
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding:30px;
+	
+}
+
+textarea{
+	resize: none;
+	
+}
+.wtext
+{
+	color: white;
+}
+
+#button 
+{
+    background-color:#5f0bd4;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration-color: white;
+    display: inline-block;
+    font-size: 16px;
+}
+#button:hover{
+	background-color: #000;
+}
+#contact_form{
+	padding-top: 9%;
+
+	padding-left: 30%;
+}
+
+#contact_form table{
+
+	font-size: 27px;
+}
+input[type=submit] {
+	border-radius: 10px;
+    width: 8em;  height: 2em;
+}
